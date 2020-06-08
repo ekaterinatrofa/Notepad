@@ -17,7 +17,7 @@ public class NotepadFunctionCipher {
 
         textBefore = notepadGUI.textNotepad.getText();
         textBefore = textBefore.toLowerCase();
-        textBefore = textBefore.replaceAll("[^a-zA-Z]+", "");
+        textBefore = textBefore.replaceAll("[^a-zA-Z ]+", "");
 
         dialog = JOptionPane.showInputDialog(notepadGUI, "Please enter the key number between - 25 and 25");
 
@@ -52,7 +52,7 @@ public class NotepadFunctionCipher {
         }
     }
 
-    public char encrypt(char c, int key)/***** encrypt Method ******/
+    public char encrypt(char c, int key)
     {
         char[] alphabet = new char[26];
         int i = 0;

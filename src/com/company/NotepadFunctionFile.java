@@ -73,8 +73,8 @@ public class NotepadFunctionFile {
         try {
             FileWriter fileWriter = new FileWriter(fileAddress + fileName);
             fileWriter.write(notepadGUI.textNotepad.getText());
+            JOptionPane.showMessageDialog(notepadGUI,"File saved");
             fileWriter.close();
-
         } catch (Exception e) {
             System.out.println("ERROR!");
         }

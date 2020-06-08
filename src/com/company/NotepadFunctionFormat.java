@@ -12,7 +12,7 @@ public class NotepadFunctionFormat {
     }
 
     public void createWordWrap() {
-        if (notepadGUI.wordWrapOn == false) {
+        if (!notepadGUI.wordWrapOn) {
             notepadGUI.wordWrapOn = true;
             notepadGUI.textNotepad.setLineWrap(true);
             notepadGUI.textNotepad.setWrapStyleWord(true);
